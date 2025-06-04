@@ -53,17 +53,49 @@ Jetson AGX Orin 기반 멀티 노드 분산 학습(DDP) 환경 - 최종 점수 0
 ```
 
 
-## ▶ 자세한 설명 - 다음 카페 정리
+## `rock_classification_baseline.py`
+- **score**: 0.87288  
+- 기존 baseline code 학습, Jetson AGX Orin 1대  
+- mobilenetv3 훈련  
+- [링크](https://cafe.daum.net/SmartRobot/RoVa/2202)
 
-https://cafe.daum.net/SmartRobot/RoVa/2202
+---
 
-https://cafe.daum.net/SmartRobot/RoVa/2203
+## `rock_classification_multi_gpu_v1.py`
+- **score**: 0.73568  
+- Jetson 기반 Multi-Node 학습, Jetson AGX Orin 4대  
+- resnet101 훈련  
+- [링크](https://cafe.daum.net/SmartRobot/RoVa/2206)
 
-https://cafe.daum.net/SmartRobot/RoVa/2206
+---
 
-https://cafe.daum.net/SmartRobot/RoVa/2216
+## `rock_classification_multi_gpu_v2.py`
+- **score**: 0.76311  
+- class weight, augmentation 추가  
+- resnet50 훈련  
+- [링크](https://cafe.daum.net/SmartRobot/RoVa/2216)
 
-https://cafe.daum.net/SmartRobot/RoVa/2222
+---
 
-https://cafe.daum.net/SmartRobot/RoVa/2227
+## `rock_classification_multi_gpu_v3.py`
+- **score**: 0.78917  
+- Two-Stage Fine-Tuning 적용, TTA 적용  
+- resnet50 훈련  
+- [링크](https://cafe.daum.net/SmartRobot/RoVa/2222)
+
+---
+
+## `rock_classification_multi_gpu_v4.py`
+- **score**: 0.8195  
+- Two-Stage Fine-Tuning 적용  
+- resnet101 훈련  
+- [링크](https://cafe.daum.net/SmartRobot/RoVa/2227)
+
+---
+
+## `rock_classification_multi_gpu_v5.py`
+- **score**: 0.84178  
+- TTA 삭제, Window RTX4070 super 환경에서 학습, Two-Stage Fine-Tuning 유지  
+- resnet101 훈련  
+- [링크](https://cafe.daum.net/SmartRobot/RoVa/2229)
 
