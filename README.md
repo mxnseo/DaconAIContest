@@ -1,5 +1,3 @@
-# DaconAIContest
-
 # 🪨 Rock Type Classification with Multi-GPU DDP Training
 
  **Dacon 자갈 암석 분류 대회**를 위해 진행된 분류 모델 학습 파이프라인
